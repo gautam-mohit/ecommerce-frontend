@@ -1,0 +1,28 @@
+// .cart {
+//   display: flex;
+//   align-items: center;
+// }
+// .cart > img {
+//   color: aliceblue;
+// }
+// .cart > p {
+//   color: white;
+//   font-weight: 650;
+//   cursor: pointer;
+// }
+
+// good approach
+.cart {
+  display: flex;
+  align-items: center;
+  p {
+    color: white;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  img {
+    color: aliceblue;
+    height: 20px;
+    width: 25px;
+  }
+}

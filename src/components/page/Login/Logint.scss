@@ -1,0 +1,48 @@
+* {
+  height: 700;
+}
+
+.login {
+  text-align: center;
+  justify-content: center;
+  width: 800;
+  height: 900;
+  background-position: center 90%;
+  // background-color: #2874f0;
+  margin: 15% 30%;
+  margin-top: 5%;
+  padding: 40px;
+  border-radius: 5px;
+  display: flex;
+  border: 1px solid grey;
+  position: fixed;
+  .left {
+    background-color: #2874f0;
+    height: 450px;
+    h1,
+    p {
+      color: white;
+      margin-top: 10px;
+    }
+
+    .loginimage {
+      background-color: #2874f0;
+      margin-top: 200px;
+    }
+  }
+  .right {
+    background-color: #dddddd;
+    form {
+      label {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+      button{
+        padding: 10px;
+        margin: 10px;
+      }
+    }
+  }
+}

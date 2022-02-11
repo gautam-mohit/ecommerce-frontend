@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  background-color: #182337;
+  height: 400px;
+  padding: 45px;
+  .about,
+  .help,
+  .policy,
+  .social {
+    margin: 13px, 40px;
+    ul {
+      list-style: none;
+      li {
+        margin-top: 10px;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+        }
+      }
+    }
+    .about ul li a:hover {
+      text-decoration: underline;
+    }
+    .help ul li a:hover {
+      text-decoration: underline;
+    }
+    .policy ul li a:hover {
+      text-decoration: underline;
+    }
+    .social ul li a:hover {
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    color: #878787;
+    text-transform: uppercase;
+  }
+  .icon {
+    border-top: 2px solid #878787;
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    .icons {
+      margin: 10px 30px;
+      padding-top: 10px;
+      .bottom {
+        color: white;
+        position: relative;
+        left: 30px;
+        bottom: 18px;
+      }
+    }
+    .copy {
+      margin: 20px 50px;
+      display: flex;
+      color: white;
+      .card {
+        position: relative;
+        left: 120px;
+      }
+    }
+  }
+  .right-content {
+    border-left: 1px solid #878787;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: white;
+    display: flex;
+    margin: 0px 10px;
+    .right {
+      position: 10px;
+      left: 30px;
+      display: inline;
+      .text1 {
+        color: #878787;
+        font-weight: 800;
+      }
+      .text2 {
+        margin-top: 10px;
+        color: white;
+        font-size: 16px;
+        .span {
+          color: blue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
