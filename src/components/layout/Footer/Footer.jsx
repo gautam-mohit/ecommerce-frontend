@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.scss";
 import { FOOTER_LINKS } from "./constants";
-import { Footerlinkcomp } from "./Footerlinkcomp";
 import FooterLink from "../../common/FooterLink";
 
 const Footer = (link, label) => {

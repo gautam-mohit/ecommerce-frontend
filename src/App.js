@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import Logint from "./components/page/Login/Logint";
+import Login from "./components/page/Login";
 import Cart from "./components/common/Cart";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
@@ -22,7 +22,7 @@ function App() {
           ></Route>
           <Route path="/header" exact element={<Header />}></Route>
           <Route path="/footer" exact element={<Footer />}></Route>
-          <Route path="/login" exact element={<Logint />}></Route>
+          <Route path="/login" exact element={<Login />}></Route>
           <Route path="/cart" exact element={<Cart />}></Route>
           {/* <Header /> */}
           {/* <Footer /> */}
