@@ -1,14 +1,12 @@
-.footer {
-  li {
-    margin-top: 10px;
-    list-style: none;
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
+.footer-link {
+  margin-top: 10px;
+  list-style: none;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
   }
-  a:hover {
-    text-decoration: underline;
-  }
+}
+a:hover {
+  text-decoration: underline;
 }
