@@ -1,10 +1,10 @@
 import React from "react";
 import { Formik, Form, Field, FieldArray, ErrorMessage } from "formik";
 import * as yup from "yup";
-import "./Logint.scss";
+import "./Login.scss";
 import { validate } from "./validate";
 import { INITIAL_VALUES } from "./constant";
-const Logint = () => {
+const Login = () => {
   return (
     <>
       <div className="login">
@@ -28,7 +28,7 @@ const Logint = () => {
             {({ values }) => (
               <Form>
                 <label>Email:</label>
-                <Field name="Email" type="email"></Field>
+                <Field className="email" name="Email" type="email"></Field>
 
                 <ErrorMessage name="name" />
 
@@ -49,4 +49,4 @@ const Logint = () => {
     </>
   );
 };
-export default Logint;
+export default Login;
