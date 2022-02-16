@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { useState } from "react";
 import Search from "../../common/Search";
 import Cart from "../../page/Cart";
 import "./Header.scss";
+import Login from "../../page/Login";
 
 const Header = () => {
   return (
@@ -25,8 +27,8 @@ const Header = () => {
         </div>
       </div>
       <Search />
-      <div className="login">
-        <button>Login</button>
+      <div className="loginbtn">
+        <button onClick={Login}>Login</button>
       </div>
 
       <div className="more_btn">
