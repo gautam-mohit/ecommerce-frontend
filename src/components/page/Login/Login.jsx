@@ -4,7 +4,7 @@ import * as yup from "yup";
 import "./Login.scss";
 import { validate } from "./validate";
 import { INITIAL_VALUES } from "./constant";
-const Login = () => {
+const Login = (props) => {
   return (
     <>
       <div className="login">
