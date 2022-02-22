@@ -11,18 +11,23 @@ const Header = () => {
   const [token, setToken] = useState(null);
   console.log(token);
   const navigate = useNavigate();
+
   useEffect(() => {
     console.log("hello");
     let token = JSON.parse(localStorage.getItem("token")) || null;
     setToken(token);
   }, []);
 
+  const local = {
+    name: "mohit",
+    token: " ",
+  };
   const loginUser = () => {
-    navigate("/login");
     let token = uuid();
-    let obj = { token, name: "Mohit" };
-    localStorage.setItem("token", JSON.stringify(obj));
-    setToken(obj);
+    let obj = { token };
+    localStorage.setItem("token", JSON.stringify(local));
+    setToken(local);
+    navigate("/login");
   };
 
   return (
