@@ -6,7 +6,7 @@ function Cart() {
     <>
       <div className="cart">
         <img
-          classname="cartlogo"
+          className="cartlogo"
           src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
           alt="cart logo"
         />

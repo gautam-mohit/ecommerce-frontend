@@ -20,8 +20,9 @@ const Header = () => {
 
   const local = {
     name: "mohit",
-    token: " ",
+    token: "",
   };
+
   const loginUser = () => {
     let token = uuid();
     let obj = { token };

@@ -5,6 +5,7 @@ import "./App.css";
 import Layout from "./components/layout/Layout";
 import Login from "./components/page/Login";
 import Cart from "./components/common/Cart";
+import Products from "./components/products/Products";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           {/* <Route path="/header" exact element={<Header />}></Route> */}
           {/* <Route path="/footer" exact element={<Footer />}></Route> */}
           <Route path="/layout" exact element={<Layout />}></Route>
+          <Route path="/products" exact element={<Products />}></Route>
 
           <Route path="/login" exact element={<Login />}></Route>
           <Route path="/cart" exact element={<Cart />}></Route>
