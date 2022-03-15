@@ -1,8 +1,9 @@
 import React from "react";
-
+ import Header from "./components/layout/Header";
 const Products = () => {
   return (
     <>
+    <Header/>
       <div className=" ml-10  flex">
         <div className="">
           <img
