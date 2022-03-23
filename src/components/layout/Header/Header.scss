@@ -41,7 +41,7 @@
       }
     }
   }
-  .login > button {
+  .loginbtn > button {
     border: none;
     outline: none;
     width: 10vw;
@@ -54,6 +54,7 @@
   .more_btn {
     display: flex;
     align-items: center;
+    color: white;
     cursor: pointer;
     span {
       color: white;
@@ -61,10 +62,8 @@
     }
     img {
       color: white;
-    }
-    img {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
     }
   }
 }

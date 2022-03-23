@@ -4,7 +4,7 @@ import * as yup from "yup";
 import "./Login.scss";
 import { validate } from "./validate";
 import { INITIAL_VALUES } from "./constant";
-const Login = () => {
+const Login = (props) => {
   return (
     <>
       <div className="login">
@@ -27,18 +27,17 @@ const Login = () => {
           >
             {({ values }) => (
               <Form>
-                <label>Email:</label>
-                <Field className="email" name="Email" type="email"></Field>
-
-                <ErrorMessage name="name" />
-
-                <label>Phone:</label>
-                <Field name="phone" type="number"></Field>
-
+                <label>Mobile:</label>
+                <Field name="mobile" type="number"></Field>
                 <ErrorMessage name="phone" />
 
                 <label>Password:</label>
                 <Field name="password" type="password"></Field>
+                <ErrorMessage name="password" />
+
+                <label>Otp:</label>
+                <Field name="otp" type="otp"></Field>
+                <ErrorMessage name="otp" />
 
                 <button type="submit">Submit</button>
               </Form>

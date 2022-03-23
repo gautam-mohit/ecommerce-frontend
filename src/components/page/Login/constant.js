@@ -1,2 +1,5 @@
-export const INITIAL_VALUES = { email: "" ,  phone: "" , password: "", };
- 
+export const INITIAL_VALUES = {
+  mobile: "",
+  password: "",
+  otp:""
+};

@@ -1,9 +1,36 @@
 import React, { Component } from "react";
+import { useState, useEffect } from "react";
+import { v4 as uuid } from "uuid";
+import { useNavigate } from "react-router-dom";
 import Search from "../../common/Search";
 import Cart from "../../page/Cart";
 import "./Header.scss";
+import Login from "../../page/Login";
 
 const Header = () => {
+  const [token, setToken] = useState(null);
+  console.log(token);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log("hello");
+    let token = JSON.parse(localStorage.getItem("token")) || null;
+    setToken(token);
+  }, []);
+
+  const local = {
+    name: "mohit",
+    token: "",
+  };
+
+  const loginUser = () => {
+    let token = uuid();
+    let obj = { token };
+    localStorage.setItem("token", JSON.stringify(local));
+    setToken(local);
+    navigate("/login");
+  };
+
   return (
     <div className="header">
       <div className="flipkartlogo">
@@ -25,10 +52,16 @@ const Header = () => {
         </div>
       </div>
       <Search />
-      <div className="login">
-        <button>Login</button>
-      </div>
-
+      {!token && (
+        <div className="loginbtn">
+          <button onClick={loginUser}>Login</button>
+        </div>
+      )}
+      {token && (
+        <div className="loginbtn">
+          <p>Mohit</p>
+        </div>
+      )}
       <div className="more_btn">
         <span>More</span>
         <img
