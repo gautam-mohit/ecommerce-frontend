@@ -53,7 +53,7 @@ const Header = () => {
       </div>
       <Search />
       {!token && (
-        <div className="loginbtn">
+        <div className="loginbtn text-white">
           <button onClick={loginUser}>Login</button>
         </div>
       )}
